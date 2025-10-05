@@ -1,13 +1,13 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 
-export default function Section1() {
+export default function Section3() {
   return (
     <div className="mx-6 md:mx-12 my-8">
       {/* Desktop */}
-      <div className="hidden md:flex rounded-3xl flex-row justify-between items-center px-8 py-20 gap-12 text-green-950">
+      <div className="hidden md:flex rounded-3xl flex-row justify-start gap-16 items-center px-8 py-20 text-green-950">
         {/* Image */}
-        <div>
+        <div className="flex-shrink-0">
           <img
             src="/images/img2.jpg"
             alt="Illustration"
@@ -16,8 +16,8 @@ export default function Section1() {
         </div>
 
         {/* Texte */}
-        <div className="flex mr-50 flex-col items-start gap-6 max-w-lg">
-          <h1 className="text-3xl md:text-3xl font-semibold leading-tight tracking-tight">
+        <div className="flex flex-col items-start gap-6 max-w-lg">
+          <h1 className="text-3xl font-semibold leading-tight tracking-tight">
             Your one stop to all <br />
             consulting needs
           </h1>
@@ -45,7 +45,7 @@ export default function Section1() {
             </li>
           </ul>
 
-          <button className="bg-green-400 text-[15px] text-green-950 px-6 py-2 rounded-md font-medium hover:bg-green-500 transition mt-5">
+          <button className="self-start bg-green-400 text-[15px] text-green-950 px-6 py-2 rounded-md font-medium hover:bg-green-500 transition mt-5">
             Let’s talk
           </button>
         </div>
@@ -53,15 +53,13 @@ export default function Section1() {
 
       {/* Mobile */}
       <div className="flex md:hidden flex-col justify-center items-center rounded-3xl px-6 py-12 gap-6 text-green-950">
-        {/* Image */}
         <img
           src="/images/img2.jpg"
           alt="Illustration"
           className="w-full max-w-xs sm:max-w-sm rounded-3xl mx-auto"
         />
 
-        {/* Texte */}
-        <div className="flex  flex-col gap-4 text-center">
+        <div className="flex flex-col gap-4 text-center">
           <h1 className="text-2xl font-semibold leading-tight tracking-tight">
             Your one stop to all <br />
             consulting needs
