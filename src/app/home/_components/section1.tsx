@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Section1() {
   return (
-    <div className="mx-6 md:mx-12 my-8">
+    <div id="home" className="mx-6 md:mx-12 my-8 scroll-mt-50">
       {/* Desktop */}
       <div className="hidden md:flex mt-25 mb-30 max-h-[450px] rounded-3xl flex-row justify-between items-center px-8 py-20 gap-8 bg-gradient-to-r from-green-950 to-green-900 text-white">
         {/* Texte */}
@@ -36,7 +36,7 @@ export default function Section1() {
       </div>
 
       {/* Mobile */}
-      <div className="flex md:hidden flex-col justify-center items-center mt-12 mb-20 gap-6 bg-gradient-to-r from-green-950 to-green-900 text-white rounded-3xl px-6 py-12">
+      <div className="scroll-mt-50 flex md:hidden flex-col justify-center items-center mt-12 mb-20 gap-6 bg-gradient-to-r from-green-950 to-green-900 text-white rounded-3xl px-6 py-12">
         {/* Image */}
         <img
           src="/images/img1.jpg"
@@ -46,7 +46,7 @@ export default function Section1() {
 
         {/* Texte */}
         <div className="flex flex-col gap-4 text-center">
-          <h1 className="text-3xl leading-tight tracking-tight">
+          <h1 className="text-3xl font-titles leading-tight tracking-tight">
             Boost your <br /> business through <br />
             <span className="text-green-400">online </span>marketing
           </h1>

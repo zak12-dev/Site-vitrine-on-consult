@@ -1,5 +1,5 @@
 import React from "react";
-import Acceuil from "./acceuil/page";
+import Acceuil from "./home/page";
 
 export default function Home() {
   return (

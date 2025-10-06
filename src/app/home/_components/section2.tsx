@@ -37,7 +37,7 @@ export default function Section2() {
   ];
 
   return (
-    <div className="py-20 px-6 md:px-12 bg-gray-100">
+    <div id="services" className="py-20 px-6 md:px-12 bg-gray-100 scroll-mt-20">
       {/* Desktop */}
       <div className="hidden md:grid grid-cols-3 gap-6 max-w-6xl mx-auto">
         {/* Première colonne : Texte */}
@@ -71,7 +71,7 @@ export default function Section2() {
             <p className="text-green-950 text-[15px] group-hover:text-white">
               {service.description}
             </p>
-            <button className="text-green-950 text-[15px] group-hover:text-white mt-5">
+            <button className="text-green-950 text-[15px] group-hover:text-white mt-5 hover:underline focus:underline">
               Read more
             </button>
           </div>
@@ -79,7 +79,7 @@ export default function Section2() {
       </div>
 
       {/* Mobile */}
-      <div className="md:hidden">
+      <div className="md:hidden scroll-mt-20">
         {/* Texte */}
         <div className="text-center mb-6">
           <h2 className="text-2xl text-green-950 font-semibold">

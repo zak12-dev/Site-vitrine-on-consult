@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -119,4 +121,37 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Utilise la variable CSS définie par next/font/google */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titles);
+  font-weight: 600;
+}
+
+body,
+p,
+span,
+li {
+  font-family: inherit; /* ou la font par défaut Tailwind */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* empêche le scroll horizontal non voulu */
+}
+
+.container {
+  overflow: hidden; /* si tu veux bloquer le scroll sur ce container */
+}
+html {
+  scroll-behavior: smooth;
 }

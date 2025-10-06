@@ -3,7 +3,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function Section3() {
   return (
-    <div className="mx-6 md:mx-12 my-8">
+    <div id="about" className="mx-6 md:mx-12 my-8 scroll-mt-5">
       {/* Desktop */}
       <div className="hidden md:flex rounded-3xl flex-row justify-start gap-16 items-center px-8 py-20 text-green-950">
         {/* Image */}
@@ -52,7 +52,7 @@ export default function Section3() {
       </div>
 
       {/* Mobile */}
-      <div className="flex md:hidden flex-col justify-center items-center rounded-3xl px-6 py-12 gap-6 text-green-950">
+      <div className="scroll-mt-20 flex md:hidden flex-col justify-center items-center rounded-3xl px-6 py-12 gap-6 text-green-950">
         <img
           src="/images/img2.jpg"
           alt="Illustration"
